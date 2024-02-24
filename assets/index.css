@@ -57,7 +57,7 @@ header {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: var(--secundary-color);
+  background-color: var(--primary-color);
   transform: scaleX(0);
   transform-origin: bottom right;
   transition: transform 0.5s ease;
@@ -68,11 +68,11 @@ header {
   transform-origin: bottom left;
   transform: scaleX(1);
 }
-/* @media screen and(max-width: 650px) {
+@media screen and(max-width: 650px) {
   header > h1 {
     font-size: 50px;
   }
-} */
+}
 /* .content-image {
   position: relative;
   width: 100%;
@@ -122,7 +122,7 @@ header {
   border-radius: 30px;
   font-size: 15px;
   text-align: center;
-  margin-top: 5px;
+  margin: 5px 15px;
   transition: background-color 1s ease-in-out;
 }
 
@@ -146,10 +146,21 @@ header {
   border-radius: 50%; /*no me lo toma con esta imagen */
 }
 
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.skills > div > img {
+  width: 100px;
+}
 footer {
   display: flex;
   justify-content: end;
-  /* align-items: center; */
+  align-items: center;
+  padding: 0 20px;
+  font-weight: 470;
 }
 /* .text-button {
   color: #fff;
@@ -162,20 +173,11 @@ footer {
   font-family: Arial, Helvetica, sans-serif;
 } */
 
-/* button:hover {
-  background-color: blue;
+button:hover {
+  background-color: rgb(129, 54, 10);
   transition: background-color 1s ease;
   animation: agrandar 1s ease-in-out;
-} */
-
-/* .proyectos-container {
-  display: flex;
-  background-color: #fff;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 20px;
-  margin-top: 40px;
-} */
+}
 
 /* .card { */
 /* Add shadows to create the "card" effect */
@@ -209,3 +211,12 @@ footer {
     transform: scale(1);
   }
 } */
+
+/*Proyectos CSS*/
+
+.proyectos-container {
+  display: flex;
+  background-color: #fff;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
